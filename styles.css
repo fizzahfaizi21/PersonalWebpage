@@ -1,0 +1,310 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9b4d96;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Quote styling */
+.quote-section {
+    background-color: #ffd600;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #9b4d96;
+    font-weight: bold;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Top section with about and profile side by side */
+.top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Middle section - Two columns */
+.middle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Bottom section - Two columns */
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Section styling */
+.section {
+    background-color: #ffd600;
+    border-radius: 20px;
+    padding: 25px;
+    color: #9b4d96;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific section adjustments */
+.about-section {
+    padding: 30px;
+}
+
+.left-column, .right-column {
+    padding: 25px;
+}
+
+.career-section, .links-section {
+    padding: 25px;
+}
+
+/* Profile section styling */
+.profile-section {
+    background-color: #9b4d96;
+    border: 4px solid #ffd600;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #ffd600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #ffd600;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Profile name styling */
+.profile-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Profile title styling */
+.profile-title {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Secondary heading styling */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tertiary heading styling */
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #9b4d96;
+}
+
+/* About text styling */
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* List styling - General */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #9b4d96;
+    line-height: 1.4;
+}
+
+/* Hobbies list styling */
+.hobbies-list {
+    list-style-type: disc;
+}
+
+/* Songs list styling */
+.songs-list {
+    list-style-type: decimal;
+}
+
+/* Jobs list styling */
+.jobs-list {
+    list-style-type: decimal;
+}
+
+/* Job interests and education list styling */
+.job-interests-list, .education-list {
+    list-style-type: disc;
+}
+
+/* Links list styling */
+.links-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.links-list li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Link styling */
+a {
+    color: #9b4d96;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #7a3d75;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+    .top-section {
+        grid-template-columns: 1.5fr 1fr;
+    }
+    
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        gap: 15px;
+    }
+    
+    .top-section,
+    .middle-section,
+    .bottom-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+    
+    .about-section,
+    .left-column,
+    .right-column,
+    .career-section,
+    .links-section {
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .quote-text {
+        font-size: 1rem;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .quote-section {
+        padding: 15px;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+    
+    .about-section,
+    .left-column,
+    .right-column,
+    .career-section,
+    .links-section {
+        padding: 15px;
+    }
+    
+    h1, h2 {
+        font-size: 1.4rem;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+    }
+    
+    li {
+        font-size: 0.9rem;
+    }
+}
