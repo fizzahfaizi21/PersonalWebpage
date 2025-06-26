@@ -47,10 +47,10 @@ body {
     gap: 20px;
 }
 
-/* Middle section - Two columns */
+/* Middle section - Three columns */
 .middle-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr;
     gap: 20px;
 }
 
@@ -77,7 +77,11 @@ body {
     padding: 30px;
 }
 
-.left-column, .right-column {
+.skinny-column {
+    padding: 20px;
+}
+
+.assignments-section {
     padding: 25px;
 }
 
@@ -212,6 +216,44 @@ a:hover {
     color: #7a3d75;
 }
 
+/* Assignments table styling */
+.assignments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.assignments-table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.assignments-table tr:nth-child(odd) {
+    background-color: rgba(155, 77, 150, 0.1);
+}
+
+.assignments-table tr:nth-child(even) {
+    background-color: rgba(255, 214, 0, 0.1);
+}
+
+.assignments-table tr:hover {
+    background-color: rgba(155, 77, 150, 0.2);
+}
+
+.assignments-table a {
+    color: #9b4d96;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+.assignments-table a:hover {
+    color: #7a3d75;
+}
+
 /* Responsive design for tablets */
 @media (max-width: 1024px) {
     .top-section {
@@ -245,8 +287,8 @@ a:hover {
     }
     
     .about-section,
-    .left-column,
-    .right-column,
+    .skinny-column,
+    .assignments-section,
     .career-section,
     .links-section {
         padding: 20px;
@@ -272,6 +314,11 @@ a:hover {
         width: 100px;
         height: 100px;
     }
+    
+    .assignments-table td {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Responsive design for small mobile */
@@ -289,8 +336,8 @@ a:hover {
     }
     
     .about-section,
-    .left-column,
-    .right-column,
+    .skinny-column,
+    .assignments-section,
     .career-section,
     .links-section {
         padding: 15px;
